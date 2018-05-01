@@ -53,6 +53,7 @@ public class MasterListFragment extends Fragment {
         // Set the adapter on the GridView
         gridView.setAdapter(mAdapter);
 
+        
         // Return the root view
         return rootView;
     }
