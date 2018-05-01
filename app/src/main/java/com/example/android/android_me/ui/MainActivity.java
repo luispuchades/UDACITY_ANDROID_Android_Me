@@ -24,9 +24,7 @@ import com.example.android.android_me.R;
 
 // This activity is responsible for displaying the master list of all images
 // Implement the MasterListFragment callback, OnImageClickListener
-// TODO (4) / COMPLETED Implement the MasterListFragment callback, OnImageClickListener
-public class MainActivity extends AppCompatActivity implements
-        MasterListFragment.OnImageClickListener {
+public class MainActivity extends AppCompatActivity implements MasterListFragment.OnImageClickListener{
 
 
     @Override
@@ -36,11 +34,10 @@ public class MainActivity extends AppCompatActivity implements
 
     }
 
-    @Override
+    // Define the behavior for onImageSelected
     public void onImageSelected(int position) {
-        // TODO (5) / COMPLETED Define the behavior for onImageSelected; create a Toast that
-        // displays the position clicked
-        Toast.makeText(this, "Position clicked = " + position, Toast.LENGTH_SHORT)
-                .show();
+        // Create a Toast that displays the position that was clicked
+        Toast.makeText(this, "Position clicked = " + position, Toast.LENGTH_SHORT).show();
     }
+
 }
